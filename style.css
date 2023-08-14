@@ -12,6 +12,7 @@
     padding-left: 3rem;
 }
 
+/* Main */
 .main {
     font-family: 'Space Mono', monospace;
     display: flex;
@@ -54,6 +55,38 @@
 
 .main button:hover {
     background-color: #222;
+}
+
+@media only screen and (max-width: 480px) {
+    .header {
+        padding-left: 1rem;
+        padding-top: .5rem;
+    }
+    .main {
+        flex-direction: column;
+        height: auto;
+        margin: auto;
+        margin-top: 3rem;
+    }
+    .main h1 {
+        font-size: 2rem;
+        width: 100%;
+        padding-top: 3rem;
+        padding-bottom: 1rem;
+    }
+    .main p {
+        width: 100%;
+        font-size: 1.125rem;
+    }
+    .main .image-container {
+        width: 280px;
+        height: auto;
+    }
+    .main button {
+        padding: .5rem 1rem;
+        font-size: 0.875rem;
+        width: 90%;
+    }
 }
 
 .footer {
